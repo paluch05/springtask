@@ -1,5 +1,6 @@
 package pl.orzechsoft.paluch.tasks.Task29;
 
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import pl.orzechsoft.paluch.tasks.Task29.service.FibonacciService;
@@ -12,6 +13,8 @@ public class FibonacciController {
     public FibonacciController(FibonacciService fibonacciService) {
         this.fibonacciService = fibonacciService;
     }
+
+    @GetMapping("/fib")
     public int fib(@RequestParam int a){
         int fib = fibonacciService.fib(a);
         return fib;
