@@ -16,7 +16,6 @@ public class FibonacciController {
 
     @GetMapping("/fib")
     public int fib(@RequestParam int a){
-        int fib = fibonacciService.fib(a);
-        return fib;
+        return fibonacciService.fib(a);
     }
 }
