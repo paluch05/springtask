@@ -1,1 +1,1 @@
-My first experience with Spring framework. Program has to do anything, only must consist of at least one service and one controller. Used my previous task, where program returned n element of Fibonacci sequence.
+My first experience with Spring framework. Program has to do anything, only must consist of at least one service and one controller. Used my previous task, where program returned n-th element of Fibonacci sequence.
